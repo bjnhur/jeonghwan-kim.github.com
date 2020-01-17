@@ -103,7 +103,5 @@
       document.querySelector('#category-btn'), 
       document.querySelector('#category-dropdown'),
     )
-
-    document.body.classList.add('dark-mode')
   });
 })();

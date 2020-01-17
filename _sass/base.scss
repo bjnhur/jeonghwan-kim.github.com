@@ -1,9 +1,20 @@
+:root {
+  --bg-color: $white-color
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgb(21, 32, 43);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 body {
   font-family: $base-font-family;
   color: $black-color;
+  background-color: var(--bg-color);
 }
 a {
   color: $black-color;

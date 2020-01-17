@@ -1,0 +1,30 @@
+$dark-fg-color: rgb(136, 153, 166);
+$dark-bg-color: rgb(21, 32, 43);
+
+body.dark-mode {
+  background-color: $dark-bg-color;
+
+  .home,
+  .category,
+  .tag,
+  article.post,
+  article.post a:not(.btn-secondary),
+  .post-list .post-item .post-summary,
+  .post .post-aside .post-toc ul li a,
+  .tag-page .tag-item ul.post-list li.post-item a.post-title {
+    color: $dark-fg-color;
+  }
+  .post .post-aside>*,
+  .series-navigator {
+    border-color: $dark-fg-color;
+  }
+
+  .post-header .post-title,
+  .post .post-aside .post-toc ul li a.active {
+    color: $white-color;
+  }
+
+  .btn {
+    background: transparent;
+  }
+}
